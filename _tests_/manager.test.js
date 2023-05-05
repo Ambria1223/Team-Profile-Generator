@@ -3,9 +3,9 @@ const Manager = require("../lib/manager");
 
 describe ("Manager", () => {
     const mockManager = {
-        name: "Cynthia",
-        id:835,
-        email:"cynthiagreen32@gmail.com",
+        Name: "Cynthia",
+        Id:835,
+        Email:"cynthiagreen32@gmail.com",
         officeNumber:62,
     };
     describe("constructor tests", () => {
@@ -16,9 +16,9 @@ describe ("Manager", () => {
     test("should construct a new instance of an manager class with name,id,email,and office number",() => {
         const manager = new Manager(mockManager);
         expect(manager).toEqual({
-            name:"Cynthia",
-            id: 835,
-            email: "cynthiagreen32@gmail.com",
+            Name:"Cynthia",
+            Id: 835,
+            Email: "cynthiagreen32@gmail.com",
             officeNumber: 62,
         });
     });

@@ -1,10 +1,10 @@
-const Employee = require("../lib/employee");
+const Employee = require("./lib/employee");
 
 describe ("Employee", () => {
     const mockEmployee = {
-        name: "Bob",
-        id:123,
-        email:"bobisawesome@gmail.com",
+        Name: "Bob",
+        Id:123,
+        Email:"bobisawesome@gmail.com",
     };
     describe("constructor tests", () => {
         test("should contruct a new instance of an employee class", () => {
@@ -14,9 +14,9 @@ describe ("Employee", () => {
     test("should construct a new instance of an employee class with name,id,email",() => {
         const employee = new Employee(mockEmployee);
         expect(employee).toEqual({
-            name:"Bob",
-            id: 123,
-            email: "bobisawesome@gmail.com",
+            Name:"Bob",
+            Id: 123,
+            Email: "bobisawesome@gmail.com",
         });
     });
     });

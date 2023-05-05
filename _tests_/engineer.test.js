@@ -1,10 +1,10 @@
-const Engineer = require("../lib/engineer");
+const Engineer = require("./lib/engineer");
 
 describe ("Engineer", () => {
     const mockEngineer = {
-        name: "Jonathan",
-        id:167,
-        email:"jonathanbento1@gmail.com",
+        Name: "Jonathan",
+        Id:167,
+        Email:"jonathanbento1@gmail.com",
         Github:"Jonathan1geek",
     };
     describe("constructor tests", () => {
@@ -15,9 +15,9 @@ describe ("Engineer", () => {
     test("should construct a new instance of an engineer class with name,id,email,and Github",() => {
         const engineer = new Engineer(mockEngineer);
         expect(engineer).toEqual({
-            name:"Jonathan",
-            id: 167,
-            email: "jonathanbento1@gmail.com",
+            Name:"Jonathan",
+            Id: 167,
+            Email: "jonathanbento1@gmail.com",
             Github:"Jonathan1geek",
         });
     });
@@ -42,6 +42,11 @@ describe ("Engineer", () => {
     test("should return name when the getgitHub method is called", () => {
         const engineer = new Engineer(mockEngineer);
         expect(engineer.getgitHub()).toEqual("Jonathan1geek");
+    });
+
+    test ("should return name when the getRole method is called", () => {
+        const engineer = new Engineer(mockEngineer);
+        expect(engineer.getRole()).toEqual("Engineer");
     });
 
     });

@@ -1,11 +1,11 @@
-const Intern = require("../lib/intern");
+const Intern = require("./lib/intern");
 
 describe ("Intern", () => {
     const mockIntern = {
-        name: "Amanda",
-        id:142,
-        email:"amandaisawesome@gmail.com",
-        school:"Howard",
+        Name: "Amanda",
+        Id:142,
+        Email:"amandaisawesome@gmail.com",
+        School:"Howard",
     };
     describe("constructor tests", () => {
         test("should contruct a new instance of an intern class", () => {
@@ -15,10 +15,10 @@ describe ("Intern", () => {
     test("should construct a new instance of an intern class with name,id,email,and school",() => {
         const intern = new Intern(mockIntern);
         expect(intern).toEqual({
-            name:"Amanda",
-            id: 142,
-            email: "amandaisawesome@gmail.com",
-            school: "Howard",
+            Name:"Amanda",
+            Id: 142,
+            Email: "amandaisawesome@gmail.com",
+            School: "Howard",
         });
     });
     });
