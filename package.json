@@ -1,5 +1,16 @@
+
 {
-  "dependencies": {
-    "jest": "^29.5.0"
-  }
-}
+  "name": "_tests_",
+  "version": "1.0.0",
+  "description": "",
+  "main": "employee.test.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"}
+  
+
+
+
